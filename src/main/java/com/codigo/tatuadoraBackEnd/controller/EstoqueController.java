@@ -1,8 +1,6 @@
 package com.codigo.tatuadoraBackEnd.controller;
 
 import com.codigo.tatuadoraBackEnd.entidades.Produto;
-import com.codigo.tatuadoraBackEnd.entidades.Pessoa;
-import com.codigo.tatuadoraBackEnd.services.PessoaService;
 import com.codigo.tatuadoraBackEnd.services.ProdutoService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,30 +16,6 @@ import java.util.List;
 public class EstoqueController {
     @Autowired
     private ProdutoService produtoService;
-    @Autowired
-    private PessoaService pessoaService;
-
-    @PostMapping("/login")
-    public Boolean validarLogin(@RequestBody Pessoa pessoaInput){
-
-        boolean cpfValido = pessoaService.validacaoCpf(pessoaInput.getCpf());
-        if(cpfValido){
-            boolean valido = pessoaService.validarLogin(pessoaInput.getSenha(), pessoaInput.getCpf());
-            if(valido){
-                return true;
-            }
-            return false;
-        }else {
-            return false;
-        }
-
-    }
-
-    @GetMapping("/login/todosOsLogins")
-    public List<Pessoa> Usuarios(){
-        List<Pessoa> usuarios = pessoaService.todosLogins();
-        return usuarios;
-    }
 
     @GetMapping("/todosOsProdutos")
     public List<Produto> todosProdutos(){
