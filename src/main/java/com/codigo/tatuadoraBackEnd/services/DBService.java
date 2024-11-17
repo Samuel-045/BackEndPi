@@ -17,7 +17,7 @@ public class DBService {
     @Bean
     public void instanciarDB() throws ParseException {
 
-        Pessoa pessoa1 = new Pessoa("12341","578.289.738-45");
+        Pessoa pessoa1 = new Pessoa("12341","505.467.808-57");
         Pessoa pessoa2 = new Pessoa("1234","111.111.111-22");
 
         //trocar os dados quando iniciar o programa

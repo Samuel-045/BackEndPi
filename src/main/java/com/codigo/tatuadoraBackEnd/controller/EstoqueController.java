@@ -11,6 +11,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
+
+@CrossOrigin(origins = "*", maxAge = 33600)
 @RestController
 @RequestMapping("/estoque")
 public class EstoqueController {
