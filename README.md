@@ -1,7 +1,7 @@
 <h1>Tatuador - back-end - spring boot</h1>
 <p align='center'>
     <img src="https://img.shields.io/badge/Status-FINALIZADO-blue">
-    <img src="https://img.shields.io/github/last-commit/Samuel-045/Tattoo-back-pi?color=blue">
+    <img src="https://img.shields.io/github/last-commit/Samuel-045/Tatoo-back-pi?color=blue">
 </p>
 
 <h2> Descrição :pencil2: </h2>
