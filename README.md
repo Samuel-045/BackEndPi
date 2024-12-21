@@ -6,7 +6,7 @@
 
 <h2> Descrição :pencil2: </h2>
 <p>
-  Este repositório contém a parte do back-end do projeto tatuador feito com Angular e Spring Boot.<br>
+  Este repositório contém a parte do back-end do projeto tatuador feito com Angular, TypeScript e Spring Boot.<br>
   O código feito em Spring Boot conta as operações CRUD, que foram distribuídas em uma arquitetura de camadas, que auxilia na organização do projeto como um todo.<br>
   Além das operações CRUD, há a variação do método de busca do produto e a verificação do cpf inserido e posteriormente a validação do login do usuário.
 </p>
